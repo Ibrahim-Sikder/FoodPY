@@ -1,4 +1,4 @@
-import Container from "../../ui/Container";
+
 import food from "../../assets/images/food.jpg";
 import food2 from "../../assets/images/food4.jpg";
 import food3 from "../../assets/images/food3.jpg";
@@ -8,7 +8,7 @@ import Card from "../../components/Card/Card";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 const HeroSection = () => {
   return (
-    <Container className="">
+  
       <div className="grid grid-cols-12 gap-3 mt-5 place-content-center justify-center">
         <div className="col-span-12 sm:col-span-6 lg:col-span-2 lg:order-1 order-3 ">
           <Card className='text-center  '>
@@ -37,7 +37,11 @@ const HeroSection = () => {
           </Card>
         </div>
         <div className="col-span-12 lg:col-span-8 lg:order-1 order-2 ">
-          <img className="w-full " src={food2} alt="food" />
+          <img className="w-full h-[80%] object-cover" src={food2} alt="food" />
+         <div className="text-center mt-5 w-[70%] mx-auto ">
+         <h3>Set The Table & The Mood </h3>
+         <small> Set the table elegantly with fine linens and polished silverware, then create ambiance with soft candlelight and soothing music for an unforgettable dining experience.</small>
+         </div>
         </div>
         <div className="col-span-12 sm:col-span-6  lg:col-span-2 order-3">
             <h4 className="italic mb-3">Recipes We Are Loving </h4>
@@ -59,7 +63,7 @@ const HeroSection = () => {
           </Card>
         </div>
       </div>
-    </Container>
+
   );
 };
 

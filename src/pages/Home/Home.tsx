@@ -1,10 +1,13 @@
+import Container from "../../ui/Container";
+import Category from "./Category";
 import HeroSection from "./HeroSection";
 
 const Home = () => {
     return (
-        <div>
+        <Container className="">
            <HeroSection/>
-        </div>
+           <Category/>
+        </Container>
     );
 };
 
