@@ -1,4 +1,29 @@
+@import url(../src/styles/style.css);
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+@layer base {
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    html, body{
+        scroll-behavior: smooth;
+    }
+    body{
+        font-family: 'Roboto', sans-serif;
+    }
+    h1{
+        @apply text-5xl font-bold 
+    }
+    h2{
+        @apply text-4xl font-semibold
+    }
+    h3{
+        @apply text-3xl font-semibold
+    }
+}
